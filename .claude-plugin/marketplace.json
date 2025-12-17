@@ -1,0 +1,36 @@
+{
+    "name": "flowerpower-skills",
+    "owner": {
+        "name": "legout",
+        "email": "ligno.blades@gmail.com"
+    },
+    "metadata": {
+        "description": "Skills for working with FlowerPower workflow framework - Hamilton + APScheduler/RQ",
+        "version": "1.0.0"
+    },
+    "plugins": [
+        {
+            "name": "flowerpower",
+            "source": "./flowerpower",
+            "description": "Skills for building, configuring, and managing FlowerPower data processing pipelines with Hamilton and APScheduler/RQ",
+            "version": "1.0.0",
+            "author": {
+                "name": "legout"
+            },
+            "homepage": "https://github.com/legout/flowerpower",
+            "repository": "https://github.com/legout/flowerpower-skill",
+            "license": "MIT",
+            "keywords": [
+                "flowerpower",
+                "hamilton",
+                "apscheduler",
+                "pipeline",
+                "workflow",
+                "data-processing",
+                "scheduler"
+            ],
+            "category": "development",
+            "strict": false
+        }
+    ]
+}
