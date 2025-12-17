@@ -16,43 +16,60 @@ This skill provides complete workflow support for the [FlowerPower](https://gith
 
 ### Installation Methods
 
-#### For Claude
+#### For Claude Code
 
-**Option 1: OpenSkills (Recommended)**
+**Option 1: Claude Marketplace (Recommended)**
+
+Run this in Claude Code:
 ```bash
-# Install skill in Claude
-openskills install flowerpower
+# Add marketplace
+/plugin marketplace add legout/flowerpower-skill
 
-# Or install from a local file
-openskills install /path/to/flowerpower.skill
+# Install skill
+/plugin install flowerpower@flowerpower-skill
+```
+
+**Option 2: OpenSkills**
+
+Install OpenSkills first (if not already installed)
+
+See: [Openskills Quick Start](https://github.com/numman-ali/openskills?tab=readme-ov-file#quick-start)
+```bash
+
+# Install skill using OpenSkills
+openskills install legout/flowerpower
 
 # Verify installation
 openskills list
 ```
 
-**Option 2: Manual Installation**
-```bash
-# Clone the repository
-git clone https://github.com/legout/flowerpower-skill.git
+**Option 3: Manual Installation**
 
-# Copy skill content to Claude skills directory
+Clone repository
+```bash
+
+git clone https://github.com/legout/flowerpower-skill.git
+```
+
+Copy skill content to Claude skills directory
+```bash
 cp -r flowerpower-skill/flowerpower ~/.claude/skills/
 # OR for project-specific installation
 cp -r flowerpower-skill/flowerpower .claude/skills/
-
-# Verify installation
-ls ~/.claude/skills/flowerpower
 ```
 
 #### For OpenCode
 
-**Option 1: OpenSkills (Recommended)**
-```bash
-# Install skill in OpenCode
-openskills install flowerpower
+**Option 1: OpenSkills (Recommended for OpenCode)**
 
-# Or from local file
-openskills install /path/to/flowerpower.skill
+Install OpenSkills first (if not already installed)
+
+See: [Openskills Quick Start](https://github.com/numman-ali/openskills?tab=readme-ov-file#quick-start)
+
+```bash
+
+# Install skill using OpenSkills
+openskills install legout/flowerpower
 
 # Verify installation
 openskills list
@@ -85,65 +102,6 @@ Help me create a pipeline that processes CSV files using flowerpower
 ```
 
 The skill will automatically trigger and provide step-by-step guidance.
-
-## 📦 Manual Installation
-
-If you prefer to install manually:
-
-```bash
-# Clone this repository
-git clone https://github.com/legout/flowerpower-skill.git
-cd flowerpower-skill
-
-# Install using OpenSkills
-openskills install flowerpower.skill
-
-# OR copy directly to skills directory
-cp -r flowerpower ~/.claude/skills/  # For Claude
-# OR
-cp -r flowerpower ~/.openskills/skills/  # For OpenCode
-```
-
-#### For OpenCode
-```bash
-# Install the skill in OpenCode
-openskills install flowerpower
-
-# Or from local file
-openskills install /path/to/flowerpower.skill
-
-# Verify installation
-openskills list
-```
-
-### First Use
-
-Once installed, simply ask Claude or OpenCode to work with FlowerPower:
-
-```
-Create a new flowerpower project called "data-analytics"
-```
-
-Or:
-
-```
-Help me create a pipeline that processes CSV files using flowerpower
-```
-
-The skill will automatically trigger and provide step-by-step guidance.
-
-## 📦 Manual Installation
-
-If you prefer to install manually:
-
-```bash
-# Clone this repository
-git clone https://github.com/your-repo/flowerpower-skill.git
-cd flowerpower-skill
-
-# Install using OpenSkills
-openskills install flowerpower.skill
-```
 
 ## 🛠️ What the Skill Provides
 
